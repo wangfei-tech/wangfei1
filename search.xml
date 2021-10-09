@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VS2019 易出错点</title>
+    <url>/2021/10/09/VS2019-%E6%98%93%E5%87%BA%E9%94%99%E7%82%B9/</url>
+    <content><![CDATA[<h1 id="错误代码-NMSB600"><a href="#错误代码-NMSB600" class="headerlink" title="错误代码 NMSB600#"></a>错误代码 NMSB600#</h1><p>写这篇博客之前先检讨一下自己自从搭建好博客后好长时间没有写博客了，把这篇博客作为自己研究生生涯的第一篇博客吧！<br>下午，温习C语言在练习过程中出现了不少编程语法上的问题，还好自己都解决了。但是，出现了一个小插曲：我练习C语言使用的VS2019，在语法没有问题的情况下我点击调试却出现( MSB600”CL.exe”已退出，代码为2）如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/wangfei-tech/IU/img/20211009.jpg"></p>
+<hr>
+<p>图1.报错图</p>
+<p>这里我当时百度搜索了很多方法其中我记得有一博主说是环境变量配置出错，当时我是没有考虑这个问题的（VS中的配置尽量少动！）。我又查了几个博主个解决方法，其中一个博主的解决方法对于我来讲简直是醍醐灌顶！<br>他说：在用VS2019时候，由于考虑严谨性许多VC中的语法规则在VS中安全性得到了更进一步的加强，其中如果定义double变量必须要有返回，在定义变量时要给变量提前赋值。<br>看到最后一句话，我就知道在一开始定义变量时候没有初始化！立马返回修改，重新调试运行正常！</p>
+]]></content>
+      <tags>
+        <tag>C 语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/05/27/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>

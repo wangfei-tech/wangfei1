@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="title, 学无止境">
+    <meta name="keywords" content="VS2019 易出错点, 学无止境">
     <meta name="description" content="平凡的世界，平凡的你我，平凡的生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>title | 学无止境</title>
+    <title>VS2019 易出错点 | 学无止境</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -257,12 +257,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">title</h1>
+                    <h1 class="description center-align post-title">VS2019 易出错点</h1>
                 </div>
             </div>
         </div>
@@ -376,9 +376,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C-%E8%AF%AD%E8%A8%80/">
+                                <span class="chip bg-color">C 语言</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -399,7 +403,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    348
                 </div>
                 
 
@@ -416,7 +420,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="错误代码-NMSB600"><a href="#错误代码-NMSB600" class="headerlink" title="错误代码 NMSB600#"></a>错误代码 NMSB600#</h1><p>写这篇博客之前先检讨一下自己自从搭建好博客后好长时间没有写博客了，把这篇博客作为自己研究生生涯的第一篇博客吧！<br>下午，温习C语言在练习过程中出现了不少编程语法上的问题，还好自己都解决了。但是，出现了一个小插曲：我练习C语言使用的VS2019，在语法没有问题的情况下我点击调试却出现( MSB600”CL.exe”已退出，代码为2）如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/wangfei-tech/IU/img/20211009.jpg"></p>
+<hr>
+<p>图1.报错图</p>
+<p>这里我当时百度搜索了很多方法其中我记得有一博主说是环境变量配置出错，当时我是没有考虑这个问题的（VS中的配置尽量少动！）。我又查了几个博主个解决方法，其中一个博主的解决方法对于我来讲简直是醍醐灌顶！<br>他说：在用VS2019时候，由于考虑严谨性许多VC中的语法规则在VS中安全性得到了更进一步的加强，其中如果定义double变量必须要有返回，在定义变量时要给变量提前赋值。<br>看到最后一句话，我就知道在一开始定义变量时候没有初始化！立马返回修改，重新调试运行正常！</p>
+
                 
             </div>
             <hr/>
@@ -442,7 +450,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/10/09/title/">http://example.com/2021/10/09/title/</a>
+                    <a href="http://example.com/2021/10/09/VS2019-%E6%98%93%E5%87%BA%E9%94%99%E7%82%B9/">http://example.com/2021/10/09/VS2019-%E6%98%93%E5%87%BA%E9%94%99%E7%82%B9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -479,7 +487,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/C-%E8%AF%AD%E8%A8%80/">
+                                    <span class="chip bg-color">C 语言</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -910,9 +922,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/10/09/VS2019-%E6%98%93%E5%87%BA%E9%94%99%E7%82%B9/">
                     <div class="card-image">
@@ -930,9 +943,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -941,6 +954,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -959,44 +973,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/04/%E5%8C%96%E5%B7%A5%E5%8E%82%E4%B9%8B%E6%B5%8B%E9%87%8F%E4%BB%AA%E8%A1%A8%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/2021/10/09/title/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="化工厂之测量仪表（一）">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="title">
                         
-                        <span class="card-title">化工厂之测量仪表（一）</span>
+                        <span class="card-title">title</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本科毕业后应聘来到浙江一化工厂，在不足一年的工作中，对本厂测量压力、液位、流量、成分的仪表和控制阀有了大致的了解，本系列文章主要介绍本厂所用仪表的测量原理和日常维护心得。
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-09
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8C%96%E5%B7%A5%E5%8E%82%E4%BB%AA%E8%A1%A8/" class="post-category">
-                                    化工厂仪表
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Fei
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BB%AA%E8%A1%A8/">
-                        <span class="chip bg-color">仪表</span>
-                    </a>
-                    
                 </div>
                 
             </div>
